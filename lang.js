@@ -1,6 +1,6 @@
 (function () {
   'use strict';
-  var LANGS = {"en": "English", "uk": "Українська"};
+  var LANGS = {"en": "English", "es": "Español", "pt": "Português", "uk": "Українська"};
   var DEF = 'en', KEY = 'nat_lang', d = document, de = d.documentElement, cur = DEF;
 
   function has(l) { return Object.prototype.hasOwnProperty.call(LANGS, l); }
