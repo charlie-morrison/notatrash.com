@@ -27,6 +27,17 @@
   .test li { margin: 0 0 10px; }
   .test .go { text-align: center; margin: 0 0 18px; }
   .nw { white-space: nowrap; }
+  .trailer { position: relative; display: block; margin: 8px 0 8px; aspect-ratio: 16 / 9; border-radius: 16px; overflow: hidden;
+             background: #000; box-shadow: 0 8px 32px rgba(0,0,0,.45); }
+  .trailer img, .trailer iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .trailer img { object-fit: cover; }
+  .trailer .play { position: absolute; left: 50%; top: 50%; width: 76px; height: 76px; margin: -38px 0 0 -38px; border-radius: 50%;
+                   background: rgba(18,10,46,.8); border: 3px solid #9cff3a; box-sizing: border-box; color: #9cff3a;
+                   display: flex; align-items: center; justify-content: center; transition: background .15s, color .15s; }
+  .trailer:hover .play, .trailer:focus-visible .play { background: #9cff3a; color: #120a2e; }
+  .trailer .dur { position: absolute; right: 10px; bottom: 10px; padding: 2px 8px; border-radius: 6px; background: rgba(0,0,0,.7);
+                  color: #fff; font-size: 14px; font-weight: 600; }
+  .credit { margin: 0 0 4px; font-size: 14px; color: #a39dc0; }
   .btn { display: inline-block; padding: 12px 24px; border-radius: 12px; background: #9cff3a; color: #120a2e;
          font-weight: 700; text-decoration: none; }
   footer { max-width: 680px; margin: 0 auto; padding: 24px 20px 48px; text-align: center; font-size: 15px; color: #a39dc0;
@@ -46,6 +57,8 @@
 <p>A rhythm runner for Android that turns any song into a level. Pick a track or a whole folder, or let the game listen
 to what is already playing on your phone. The level is built on the fly, right to the beat.</p>
 <p class="facts">Free. No ads. No accounts.</p>
+<a class="trailer" href="https://www.youtube.com/watch?v=Og_VfY7JZA4" data-yt="Og_VfY7JZA4" aria-label="Play the Not A Trash trailer, 2:46"><img src="/trailer.jpg" width="1280" height="720" alt=""><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" width="34" height="34" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span><span class="dur" aria-hidden="true">2:46</span></a>
+<p class="credit">Music: “Living After Death” by <a href="https://sonofthedeadsun.com">Son of the Dead Sun</a></p>
 <p class="soon">Coming soon to Google Play</p>
 <div class="test" id="test">
 <h2>Help test the game</h2>
@@ -69,6 +82,8 @@ beat, what was unclear, any freezes or crashes.</li>
 <p>Ритм-раннер для Android, який перетворює будь-яку пісню на рівень. Виберіть трек чи цілу папку або дайте грі
 послухати те, що вже грає на телефоні. Рівень будується на льоту, точно в ритм.</p>
 <p class="facts">Безкоштовно. Без реклами. Без акаунтів.</p>
+<a class="trailer" href="https://www.youtube.com/watch?v=Og_VfY7JZA4" data-yt="Og_VfY7JZA4" aria-label="Дивитися трейлер Not A Trash, 2:46"><img src="/trailer.jpg" width="1280" height="720" alt=""><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" width="34" height="34" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span><span class="dur" aria-hidden="true">2:46</span></a>
+<p class="credit">Музика: «Living After Death», <a href="https://sonofthedeadsun.com">Son of the Dead Sun</a></p>
 <p class="soon">Скоро в Google Play</p>
 <div class="test" id="test-uk">
 <h2>Допоможіть протестувати гру</h2>
@@ -92,6 +107,8 @@ beat, what was unclear, any freezes or crashes.</li>
 <p>Un runner rítmico para Android que convierte cualquier canción en un nivel. Elige una pista o una carpeta entera, o deja que el
 juego escuche lo que ya suena en tu celular. El nivel se arma al vuelo, justo al ritmo.</p>
 <p class="facts">Gratis. Sin anuncios. Sin cuentas.</p>
+<a class="trailer" href="https://www.youtube.com/watch?v=Og_VfY7JZA4" data-yt="Og_VfY7JZA4" aria-label="Ver el tráiler de Not A Trash, 2:46"><img src="/trailer.jpg" width="1280" height="720" alt=""><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" width="34" height="34" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span><span class="dur" aria-hidden="true">2:46</span></a>
+<p class="credit">Música: «Living After Death», de <a href="https://sonofthedeadsun.com">Son of the Dead Sun</a></p>
 <p class="soon">Muy pronto en Google Play</p>
 <div class="test" id="test-es">
 <h2>Ayúdanos a probar el juego</h2>
@@ -115,6 +132,8 @@ qué no quedó claro y si algo se trabó o se cerró.</li>
 <p>Um runner rítmico para Android que transforma qualquer música em um nível. Escolha uma faixa ou uma pasta inteira, ou deixe
 o jogo ouvir o que já está tocando no seu celular. O nível é montado na hora, bem na batida.</p>
 <p class="facts">Grátis. Sem anúncios. Sem contas.</p>
+<a class="trailer" href="https://www.youtube.com/watch?v=Og_VfY7JZA4" data-yt="Og_VfY7JZA4" aria-label="Ver o trailer do Not A Trash, 2:46"><img src="/trailer.jpg" width="1280" height="720" alt=""><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" width="34" height="34" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span><span class="dur" aria-hidden="true">2:46</span></a>
+<p class="credit">Música: «Living After Death», de <a href="https://sonofthedeadsun.com">Son of the Dead Sun</a></p>
 <p class="soon">Em breve no Google Play</p>
 <div class="test" id="test-pt">
 <h2>Ajude a testar o jogo</h2>
@@ -141,5 +160,30 @@ confuso e se algo travou ou fechou sozinho.</li>
 <p><a href="/privacy/"><span data-l="en">Privacy Policy</span><span data-l="uk">Політика конфіденційності</span><span data-l="es">Política de privacidad</span><span data-l="pt">Política de privacidade</span></a></p>
 <p>© 2026 CharlieMorrison</p>
 </footer>
+<script>
+(function () {
+  var d = document;
+  d.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a.trailer[data-yt]') : null;
+    if (!a || e.button || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
+    e.preventDefault();
+    var box = d.createElement('div'), f = d.createElement('iframe');
+    box.className = 'trailer';
+    f.src = 'https://www.youtube-nocookie.com/embed/' + a.getAttribute('data-yt') +
+      '?autoplay=1&rel=0&playsinline=1&hl=' + (d.documentElement.lang || 'en');
+    f.title = a.getAttribute('aria-label');
+    f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    f.setAttribute('allowfullscreen', '');
+    f.referrerPolicy = 'strict-origin-when-cross-origin';
+    box.appendChild(f);
+    box._facade = a;
+    a.parentNode.replaceChild(box, a);
+  });
+  if (window.MutationObserver) new MutationObserver(function () {
+    var on = d.querySelectorAll('div.trailer');
+    for (var i = 0; i < on.length; i++) if (on[i]._facade) on[i].parentNode.replaceChild(on[i]._facade, on[i]);
+  }).observe(d.documentElement, { attributes: true, attributeFilter: ['lang'] });
+})();
+</script>
 </body>
 </html>
